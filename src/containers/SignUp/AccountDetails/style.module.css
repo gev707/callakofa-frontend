@@ -1,0 +1,39 @@
+.form {
+  width: 972px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form h1 {
+  margin: 0 0 36px 0;
+}
+
+.form_inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form_inputs div:nth-child(1) {
+  margin-right: 20px;
+}
+
+.form_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.form_buttons button {
+  width: 232px;
+}
+.account_lastRow {
+  position: relative;
+}
+.account_lastRow span {
+  position: absolute;
+  bottom: -18px;
+}

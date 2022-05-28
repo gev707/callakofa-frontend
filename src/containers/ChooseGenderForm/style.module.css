@@ -1,0 +1,29 @@
+.form_wrapper {
+  width: 311px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 19px;
+  opacity: 40%;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.label:after {
+  content: '*';
+  color: #fe0000;
+}
+
+.radios_wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.radios_wrapper > div:not(:last-child) {
+  margin-right: 24px;
+}

@@ -1,0 +1,31 @@
+.form {
+  width: 972px;
+  display: flex;
+  flex-direction: column;
+}
+.confirmRowItems {
+  margin: 40px 0 25px 0;
+}
+.actions_buttons button {
+  width: 232px;
+}
+
+.actions_buttons button:nth-child(2) {
+  margin-left: 12px;
+}
+
+.actions_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.check_email {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  opacity: 0.4;
+}

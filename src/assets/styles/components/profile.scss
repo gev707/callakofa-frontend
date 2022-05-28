@@ -1,0 +1,441 @@
+.container {
+  width: 100%;
+  padding: 35px 40px 10px;
+
+  button[disabled] {
+    cursor: none;
+  }
+  .relative {
+    margin-bottom: 35px;
+    .back-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .w-140 {
+        button {
+          width: 174px;
+          display: block;
+          background: #ebebeb;
+          font-family: 'SF Pro Display', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 11px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          border-radius: 5px;
+          color: #0e0e0e;
+        }
+      }
+    }
+
+    p {
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      color: #0e0e0e;
+      margin-left: 8px;
+    }
+  }
+  .container-title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: #0e0e0e;
+    width: max-content;
+  }
+
+  .title-info {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #d7d7d7;
+  }
+}
+
+.d-flex {
+  display: flex;
+  gap: 30px;
+
+  .row {
+    display: flex;
+    width: 430px;
+    min-width: 430px;
+    height: 100%;
+
+    .profile-card {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 0 8px #dedede;
+      border-radius: 5px;
+      .profile-avatar {
+        width: 100%;
+        background: #f8f8f8;
+        box-shadow: 0 0 8px #dedede;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 69px 2rem;
+        border-radius: 5px;
+        position: relative;
+        .avatar_error {
+          position: absolute;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 12px;
+          color: #fe3333;
+          top: 48px;
+        }
+        .avatar-container {
+          position: relative;
+          .delete-upload {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translate(-2px, 1px);
+            cursor: pointer;
+            svg {
+              width: 15px;
+              height: 16px;
+              path {
+                fill: #c8c8c8;
+              }
+            }
+          }
+          .avatar {
+            cursor: pointer;
+            width: 116px;
+            height: 116px;
+            background: $green;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            .upload-img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              vertical-align: middle;
+            }
+            &-error {
+              border: 2px solid #fe3333;
+            }
+          }
+          .image_upload {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 17px;
+            height: 17px;
+            background: #c8c8c8;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            label {
+              overflow: hidden;
+            }
+            input {
+              display: none;
+            }
+            svg {
+              transform: rotate(-90deg);
+              width: 6.66px;
+              height: 5.45px;
+              path {
+                fill: $white;
+              }
+            }
+          }
+          .image_upload_error {
+            color: $error;
+            font-size: 10px;
+            font-weight: bold;
+            position: absolute;
+            transform: translate(-50%, 20%);
+          }
+        }
+
+        .name {
+          margin-top: 13px;
+          margin-bottom: 21px;
+          font-family: 'SF Pro Display', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          color: #0e0e0e;
+          max-width: 100%;
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+
+          &.new_line {
+            flex-direction: column;
+          }
+
+          span {
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .btn {
+          width: 139px;
+          height: 56px;
+          background: $green;
+          border-radius: 5px;
+          font-family: 'SF Pro Display', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #fbfbfb;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .card-columns {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    .card-column {
+      align-self: start;
+      width: auto;
+      height: auto;
+      padding: 35px;
+      background: #fefefe;
+      box-shadow: 0 0 8px #dedede;
+      border-radius: 5px;
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #c8c8c8;
+      }
+      .card-title {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #0e0e0e;
+        padding-bottom: 35px;
+      }
+
+      .p-30 {
+        padding: 26px 0;
+      }
+
+      .info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        line-height: 1.9;
+        gap: 10px;
+        span:first-child {
+          font-family: 'SF Pro Display', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #bebdbd;
+          white-space: nowrap;
+        }
+
+        span:nth-child(2) {
+          font-family: 'SF Pro Display', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #0e0e0e;
+          text-align: right;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          a {
+            text-decoration: none;
+            color: #0e0e0e;
+            font-family: 'SF Pro Display', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+
+          transition: all 0.3s ease;
+          a {
+            text-decoration: none;
+            color: #0e0e0e;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .edit-container {
+    flex-grow: 1;
+    min-height: 644px;
+    height: 100%;
+    background: #fdfdfd;
+    opacity: 0.8;
+    box-shadow: 0 0 8px #dedede;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #c8c8c8;
+    }
+    .sec-title {
+      padding: 25px 32px;
+      span {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #0e0e0e;
+      }
+    }
+    .edit-holder {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      .content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .personal-paragraph {
+          .para {
+            width: 71%;
+            text-align: center;
+            margin: 0 auto;
+            color: #0e0e0e;
+            font-family: 'SF Pro Display', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            .sup-span {
+              font-family: 'SF Pro Display', sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              color: $green;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+        .input-container {
+          display: flex;
+          flex-direction: column;
+          max-width: 870px;
+          width: 870px;
+          padding: 0 30px;
+          margin: 0 auto;
+          height: 100%;
+
+          &__fields {
+            display: flex;
+            flex-direction: column;
+            gap: 55px;
+            padding: 8px 0 0;
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .input-label {
+            font-family: 'SF Pro Display', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            color: #000000;
+            opacity: 0.4;
+            margin: 20px 0;
+          }
+          input {
+            background: #fbfbfb;
+            opacity: 0.8;
+            box-shadow: 0 0 8px #d8d8d8;
+            border-radius: 5px;
+            min-height: 56px;
+            height: 56px;
+            border: none;
+            padding-left: 30px;
+          }
+
+          .btn-container {
+            display: flex;
+            margin: 20px 0;
+            button {
+              border: none;
+              outline: none;
+              width: 232px;
+              height: 56px;
+              font-family: 'SF Pro Display', sans-serif;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 11px;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              cursor: pointer;
+            }
+            .btn-cancel {
+              background: #ebebeb;
+              font-family: 'SF Pro Display', sans-serif;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 11px;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              border-radius: 5px;
+              color: #0e0e0e;
+              margin-right: 12px;
+            }
+            .btn-save {
+              background: #009345;
+              border-radius: 5px;
+              color: $white;
+            }
+            .btn-disable {
+              background: #009345;
+              border-radius: 5px;
+              color: $white;
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+  }
+}

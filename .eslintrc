@@ -1,0 +1,53 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "unicorn", "import"],
+  "extends": [
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [".module.css"]
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "ignorePatterns": [".next/*"],
+  "rules": {
+    "no-debugger": "off",
+    "no-console": 0,
+    "indent": "error",
+    "react/react-in-jsx-scope": 0,
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "no-return-assign": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "linebreak-style": "off",
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "no-param-reassign": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "no-useless-catch": "off",
+    "unicorn/filename-case": "off",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ]
+  },
+  "root": true
+}

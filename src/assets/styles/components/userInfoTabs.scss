@@ -1,0 +1,49 @@
+.user-info_tabs {
+  margin: 54px 0 39px 0;
+  .tabs {
+    width: 100%;
+    height: 45px;
+    border-radius: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $icon-gray;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      width: 100%;
+      height: 45px;
+      background: #f6f6f6;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      color: #0e0e0e;
+    }
+  }
+
+  .activeTab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    background: #f6f6f6;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #0e0e0e;
+  }
+}
+.member_items {
+  margin: 85px 0 116px 0;
+}

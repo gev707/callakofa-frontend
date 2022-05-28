@@ -1,0 +1,10 @@
+.h1_primary {
+  color: #33a96a;
+  margin: 0 0 25px 0;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.h1_secondary {
+  color: #000000;
+}

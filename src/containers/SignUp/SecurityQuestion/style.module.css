@@ -1,0 +1,33 @@
+.form {
+  width: 972px;
+  display: flex;
+  flex-direction: column;
+}
+.form h1 {
+  margin: 0 0 14px 0;
+}
+
+.form_description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #979797;
+  margin-bottom: 31px;
+}
+
+.form_inputs div:nth-child(1) {
+  margin-bottom: 19px;
+}
+
+.form_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form_buttons button:nth-child(2) {
+  margin-left: 12px;
+}
+.form_buttons button {
+  width: 232px;
+}

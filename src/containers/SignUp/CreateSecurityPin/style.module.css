@@ -1,0 +1,31 @@
+.form {
+  width: 972px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1 {
+  margin: 0 0 36px 0;
+}
+
+.form div:nth-child(1) {
+  margin-bottom: 18px;
+}
+
+.form_buttons {
+  margin-top: 21px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form_buttons button {
+  width: 232px;
+}
+
+.form_fetching_error {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 12px;
+  color: #fe0000;
+}

@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  height: 390px;
+}
+
+.form_header {
+  color: #33a96a;
+  margin: 0 0 25px 0;
+  font-size: 46px;
+  line-height: 43px;
+}
+
+.form_inputs > div:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+.form svg {
+  /* Убиракем выделение при изменении видимости пароля <svg> => иконка глаза*/
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.form_password_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.form_buttons {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.form_buttons button:nth-child(2) {
+  margin-top: 19px;
+}
+
+.ico_button:after {
+  content: url('UI/arrow.svg');
+  margin-left: 14px;
+}

@@ -1,0 +1,113 @@
+.registration_page {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.registration_page div {
+  box-sizing: border-box;
+}
+
+.stages_wrapper {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stages_wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+.stages_navbar_wrapper {
+  display: flex;
+  width: 382px;
+  height: 100%;
+  background: #33a96a;
+  justify-content: center;
+  align-items: center;
+}
+
+.stages_navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stages_navbar .navbar_link:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.navbar_link {
+  position: relative;
+  padding: 0 35px 0px 61px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.navbar_link.active_link {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.navbar_link.active_link::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 6px;
+  height: 100%;
+  background-color: #fbfbfb;
+  border-radius: 0 5px 5px 0;
+}
+
+.navbar_link.active_link > .navbar_button {
+  background: #223d23;
+  box-shadow: 0px 0px 10px #223d23;
+}
+
+.navbar_button {
+  position: relative;
+
+  width: 66px;
+  margin-right: 17px;
+}
+
+.navbar_button:active,
+.navbar_button:focus {
+  background-color: #009345;
+}
+
+.link_description {
+  color: #fbfbfb;
+  word-spacing: 100vw;
+  max-width: 113px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.finished_stage_link svg {
+  width: 14px;
+  height: 12px;
+  fill: #fff;
+}
+
+.disabled_stage_link {
+  pointer-events: none;
+  opacity: 30%;
+}

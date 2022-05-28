@@ -1,0 +1,139 @@
+.form {
+  width: 972px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 350px;
+  transform: translateY(40%);
+}
+
+.form > div:nth-child(2) {
+  margin-top: 31px;
+}
+
+.form > div:nth-child(3) {
+  margin-top: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_fullName {
+  justify-content: space-between;
+  width: 100%;
+  margin: 22px 0;
+}
+
+.form_fullName div:nth-child(1) {
+  margin-right: 20px;
+}
+.form_phone_address {
+  margin-bottom: 22px;
+  gap: 20px;
+}
+
+.form_actions {
+  margin-top: 29px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.form_actions:last-child {
+  margin-top: 0;
+}
+.actions_buttons button {
+  width: 232px;
+}
+
+.actions_buttons button:nth-child(2) {
+  margin-left: 12px;
+}
+
+.actions_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.martial_gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 22px;
+  width: 100%;
+  height: 100px;
+}
+
+.martial_gender > div:last-child {
+  width: 641px;
+}
+
+.select_stabilizer {
+  z-index: 1;
+}
+
+.form_fullName {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form_actions {
+  margin-top: 29px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions_buttons button {
+  width: 232px;
+}
+
+.actions_buttons button:nth-child(2) {
+  margin-left: 12px;
+}
+
+.actions_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.job_question_inputs > div:nth-child(1) {
+  margin-right: 20px;
+}
+
+.double_input > div:nth-child(1) {
+  margin-right: 20px;
+}
+
+.double_input {
+  display: flex;
+  align-items: flex-end;
+
+  margin-top: 29px;
+}
+.bottom_area {
+  margin-bottom: 29px;
+}
+.margin_cont {
+  margin-bottom: 25px;
+}
+.row_employed {
+  flex-direction: column;
+  max-width: 641px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.row_employed > div:nth-child(1) {
+  margin-right: 0;
+  margin-bottom: 32px;
+}
+.row_employed > div:nth-child(2) {
+  margin-bottom: 13px;
+}

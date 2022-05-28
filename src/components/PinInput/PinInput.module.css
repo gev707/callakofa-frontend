@@ -1,0 +1,9 @@
+.pin_input {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1em;
+}
+
+.confirmation_pin_input {
+  letter-spacing: normal;
+}

@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  callakofa-frontend:
+    container_name: callakofa-frontend
+    build: ./
+    restart: always
+    networks:
+      - ckp
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.callakofa-frontend.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.callakofa-frontend.entrypoints=websecure"
+      - "traefik.http.routers.callakofa-frontend.tls.certresolver=myresolver"
+      - "traefik.http.services.callakofa-frontend.loadbalancer.server.port=3000"
+
+networks:
+  ckp:
+    external: true

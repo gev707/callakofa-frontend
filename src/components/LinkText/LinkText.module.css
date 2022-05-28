@@ -1,0 +1,13 @@
+.link_text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.link_text.secondary_linked a {
+  color: #33a96a;
+}
+
+.link_text a {
+  color: #000;
+  text-decoration-line: underline;
+}
